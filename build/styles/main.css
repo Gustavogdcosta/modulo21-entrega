@@ -1,30 +1,99 @@
-.hero {
-  padding: 24.2vw;
-  background-image: url(../images/hero_background.jpeg);
-  background-size: cover;
-  position: relative;
-}
 .hero__button {
-  padding: 20px;
+  padding: 1vw;
   position: absolute;
-  bottom: 4vw;
-  left: 12vw;
-  border: 2px solid rgb(35, 161, 211);
+  top: 2vw;
+  left: 3vw;
+  border: 2px solid rgb(12, 89, 119);
   border-radius: 5px;
-  color: rgb(35, 161, 211);
+  color: rgb(12, 89, 119);
   background-color: transparent;
   text-transform: uppercase;
+  font-size: 1.2vw;
+  font-family: Papyrus, fantasy;
   font-size: 16px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 17.6px;
 }
 .hero__button:hover {
   scale: 1.1;
   cursor: pointer;
 }
 
+.wallpapers {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 0;
+}
+.wallpapers__tabs {
+  margin: 2vh;
+}
+.wallpapers__tabs__button {
+  background-color: rgb(12, 89, 119);
+  padding: 1em;
+  margin: 0 1vw;
+  font-size: 2em;
+  font-family: Papyrus, fantasy;
+  color: #fff;
+  border: 0.3vh solid #fff;
+}
+.wallpapers__tabs__button:hover {
+  cursor: pointer;
+  scale: 1.1;
+}
+.wallpapers__list {
+  display: none;
+  width: 85%;
+  grid-template-columns: repeat(3, 32%);
+  column-gap: 2%;
+  margin: 0 auto;
+}
+.wallpapers__list--is-active {
+  display: grid;
+}
+.wallpapers__list__item {
+  margin-bottom: 1vh;
+  list-style: none;
+}
+.wallpapers__list__item img {
+  height: 35vh;
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  background-color: #40aeda;
+}
+
+body {
+  background-image: url(../images/fundosecaoop1.png), url(../images/hero_background.jpeg);
+  background-size: 90vw, cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll, fixed;
+  background-position: 5vw, 0;
+  background-position-y: 90vh, 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.secoes {
+  width: 90vw;
+  margin: 90vh auto;
+  position: relative;
+  background-color: black;
+  display: block;
+}
+.secoes img {
+  width: 100%;
+}
+
+h2 {
+  color: rgb(12, 89, 119);
+  font-size: 3em;
+  font-weight: bold;
+  font-family: Papyrus, fantasy;
+  margin: 1em 0 0.5em;
 }
 /*# sourceMappingURL=maps/main.css.map */

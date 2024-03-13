@@ -1,22 +1,19 @@
 @use 'cor';
 
 .hero {
-    padding: 24.2vw;
-    background-image: url(../images/hero_background.jpeg) ;
-    background-size: cover;
-    position: relative;
 
     &__button{
-        padding: 20px;
+        padding: 1vw;
         position: absolute;
-        bottom: 4vw;
-        left: 12vw;
-        border: 2px solid rgb(35, 161, 211);
+        top: 2vw;
+        left: 3vw;
+        border: 2px solid cor.$cortext;
         border-radius: 5px;
         color: cor.$cortext;
         background-color: transparent;
         text-transform: uppercase;
-        font-size: 16px;
+        font-size: 1.2vw;
+        font-family: Papyrus, fantasy; font-size: 16px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 17.6px;
 
 
         &:hover {

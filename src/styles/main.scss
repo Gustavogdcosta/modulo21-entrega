@@ -1,10 +1,47 @@
+@use 'cor';
 @use 'hero';
-@use 'cores';
+@use 'wallpapers';
 
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background-color: cor.$cortext;
+}
+
+body
+{
+    background-image: url(../images/fundosecaoop1.png), url(../images/hero_background.jpeg);
+    background-size: 90vw ,cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll, fixed;
+    background-position: 5vw, 0;
+    background-position-y: 90vh,0 ;
+
+    width: 100vw;
+    height: 100vh;
+}
+
+
+
+.secoes {
+    width: 90vw;
+    margin: 90vh auto;
+    position: relative;
+    background-color: black;
+    display: block;
+
+    img{        
+        width: 100%;
+        
+    }
+}
+
+
+h2{
+    color: cor.$cortext;
+    font-size: 3em;
+    font-weight: bold;
+    font-family: Papyrus, fantasy;
+    margin: 1em 0 0.5em;
 }

@@ -1,0 +1,48 @@
+@use 'cor';
+
+.wallpapers {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 0;
+
+    &__tabs {
+        margin: 2vh;
+        &__button{
+            background-color: cor.$cortext;
+            padding: 1em;
+            margin: 0 1vw;
+            font-size: 2em;
+            font-family: Papyrus, fantasy;
+            color: #fff;
+            border: 0.3vh solid #fff;
+
+            &:hover{
+                cursor: pointer;
+                scale: 1.1;
+            }
+
+        }
+    }
+
+    &__list{
+        display: none;
+        width: 85%;
+        grid-template-columns: repeat(3, 32%);
+        column-gap: 2%;
+        margin: 0 auto;
+
+        &--is-active {
+            display: grid;
+        }
+
+        &__item {
+            margin-bottom: 1vh;
+            list-style: none;
+
+            img{
+                height: 35vh;
+            }
+        }
+    }
+    }
