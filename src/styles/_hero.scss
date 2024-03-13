@@ -1,0 +1,27 @@
+@use 'cor';
+
+.hero {
+    padding: 24.2vw;
+    background-image: url(../images/hero_background.jpeg) ;
+    background-size: cover;
+    position: relative;
+
+    &__button{
+        padding: 20px;
+        position: absolute;
+        bottom: 4vw;
+        left: 12vw;
+        border: 2px solid rgb(35, 161, 211);
+        border-radius: 5px;
+        color: cor.$cortext;
+        background-color: transparent;
+        text-transform: uppercase;
+        font-size: 16px;
+
+
+        &:hover {
+            scale: 1.1;
+            cursor: pointer;
+        }
+    }
+}

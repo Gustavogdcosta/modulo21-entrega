@@ -1,0 +1,30 @@
+.hero {
+  padding: 24.2vw;
+  background-image: url(../images/hero_background.jpeg);
+  background-size: cover;
+  position: relative;
+}
+.hero__button {
+  padding: 20px;
+  position: absolute;
+  bottom: 4vw;
+  left: 12vw;
+  border: 2px solid rgb(35, 161, 211);
+  border-radius: 5px;
+  color: rgb(35, 161, 211);
+  background-color: transparent;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+.hero__button:hover {
+  scale: 1.1;
+  cursor: pointer;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #40aeda;
+}
+/*# sourceMappingURL=maps/main.css.map */
