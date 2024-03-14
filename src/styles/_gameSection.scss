@@ -1,0 +1,23 @@
+@use 'cor';
+
+.gameSection {
+    position: absolute;
+    top: 120vh;
+    
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        nav {
+            max-width: 48%;
+        }
+
+        img{
+            max-width: 48%;
+        }
+
+    }
+
+
+}

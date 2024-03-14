@@ -1,7 +1,7 @@
 @use 'cor';
 @use 'hero';
 @use 'wallpapers';
-
+@use 'gameSection';
 
 * {
     padding: 0;
@@ -40,8 +40,28 @@ body
 
 h2{
     color: cor.$cortext;
-    font-size: 3em;
+    font-size: 3vw;
     font-weight: bold;
     font-family: Papyrus, fantasy;
     margin: 1em 0 0.5em;
+    text-align: center;
+}
+
+h3{
+    color: cor.$cortext;
+    font-size: 2vw;
+    font-weight: bold;
+    font-family: Papyrus, fantasy;
+    margin: 1em 0 0.5em;
+    text-align: center;
+}
+
+p{ 
+    color: cor.$cortext;
+    font-size: 1vw;
+    font-weight: bold;
+    font-family: Papyrus, fantasy;
+    margin: 1em 0 0.5em;
+    text-align: center;
+    text-align: justify;
 }

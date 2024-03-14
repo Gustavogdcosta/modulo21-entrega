@@ -32,9 +32,9 @@
 }
 .wallpapers__tabs__button {
   background-color: rgb(12, 89, 119);
-  padding: 1em;
+  padding: 1vw;
   margin: 0 1vw;
-  font-size: 2em;
+  font-size: 2vw;
   font-family: Papyrus, fantasy;
   color: #fff;
   border: 0.3vh solid #fff;
@@ -45,7 +45,7 @@
 }
 .wallpapers__list {
   display: none;
-  width: 85%;
+  width: 85vw;
   grid-template-columns: repeat(3, 32%);
   column-gap: 2%;
   margin: 0 auto;
@@ -58,7 +58,23 @@
   list-style: none;
 }
 .wallpapers__list__item img {
-  height: 35vh;
+  max-height: 35vh;
+}
+
+.gameSection {
+  position: absolute;
+  top: 120vh;
+}
+.gameSection__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.gameSection__content nav {
+  max-width: 48%;
+}
+.gameSection__content img {
+  max-width: 48%;
 }
 
 * {
@@ -91,9 +107,29 @@ body {
 
 h2 {
   color: rgb(12, 89, 119);
-  font-size: 3em;
+  font-size: 3vw;
   font-weight: bold;
   font-family: Papyrus, fantasy;
   margin: 1em 0 0.5em;
+  text-align: center;
+}
+
+h3 {
+  color: rgb(12, 89, 119);
+  font-size: 2vw;
+  font-weight: bold;
+  font-family: Papyrus, fantasy;
+  margin: 1em 0 0.5em;
+  text-align: center;
+}
+
+p {
+  color: rgb(12, 89, 119);
+  font-size: 1vw;
+  font-weight: bold;
+  font-family: Papyrus, fantasy;
+  margin: 1em 0 0.5em;
+  text-align: center;
+  text-align: justify;
 }
 /*# sourceMappingURL=maps/main.css.map */
