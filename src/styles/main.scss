@@ -8,6 +8,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    max-width: 100%;
 }
 
 body
@@ -26,7 +27,7 @@ body
 
 
 .secoes {
-    width: 90vw;
+    width: 85vw;
     margin: 90vh auto;
     position: relative;
     background-color: black;
@@ -46,6 +47,7 @@ body
     font-family: Papyrus, fantasy;
     margin: 1em 0 0.5em;
     text-align: center;
+    text-shadow: 0.01vw 0.01vw #fff;
 }
 
 h3{

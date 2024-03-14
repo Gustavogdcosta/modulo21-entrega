@@ -16,6 +16,7 @@
             font-family: Papyrus, fantasy;
             color: #fff;
             border: 0.3vh solid #fff;
+            border-radius: 20px;
 
             &:hover{
                 cursor: pointer;
@@ -40,8 +41,11 @@
             margin-bottom: 1vh;
             list-style: none;
 
-            img{
-                max-height: 35vh;
+            img{    
+                height: 15vw;
+                max-width: 100%;
+                border-radius: 20px;
+                border: 0.3vh solid #fff;
             }
         }
     }
