@@ -133,14 +133,23 @@
 }
 
 body {
-  background-image: url(../images/fundosecaoop1.png), url(../images/hero_background.jpeg);
-  background-size: 90vw, cover;
+  background-image: url(../images/hero_background.jpeg);
+  background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: scroll, fixed;
-  background-position: 5vw, 0;
-  background-position-y: 90vh, 0;
+  background-attachment: fixed;
+  background-position: center top;
   width: 100vw;
   height: 100vh;
+}
+body::before {
+  position: absolute;
+  top: 90vh;
+  left: 5vw;
+  width: 90%;
+  height: 255%;
+  background-color: #000;
+  content: "";
+  opacity: 0.7;
 }
 
 .secoes {
