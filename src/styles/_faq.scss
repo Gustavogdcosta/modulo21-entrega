@@ -1,6 +1,10 @@
 @use 'cor';
 
 .faq {
+    width: 100%;
+    position: absolute;
+    top: 90vw;
+
     &__questions__item{
         margin-bottom: 1em;
 
@@ -44,10 +48,13 @@
 
     }
 
-
-    width: 100%;
+    @media (max-width:640px){
+        width: 100%;
     position: absolute;
-    top: 90vw
+    top: 130vh;
+    h3{font-size: 20px;}
+    p{ font-size: 16px;}
+    }
     
 
     

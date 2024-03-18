@@ -23,5 +23,29 @@
 
     }
 
+    @media (max-width:640px){
 
+        margin-top: 20px;
+        &__content {
+            display: block;
+            width: 100%;
+            
+            nav {
+
+                justify-content: center;
+                max-width: 100%;
+                h3 {
+                    font-size: 22px;
+                }
+                p {font-size: 20px;
+                    width: 100%;
+                }
+                
+            }
+
+            img{max-width: 100%;
+            margin-top: 25px;}
+        }
+
+    }
 }

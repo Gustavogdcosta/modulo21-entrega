@@ -84,6 +84,30 @@
 .gameSection__content img {
   max-width: 48%;
 }
+@media (max-width: 640px) {
+  .gameSection {
+    margin-top: 20px;
+  }
+  .gameSection__content {
+    display: block;
+    width: 100%;
+  }
+  .gameSection__content nav {
+    justify-content: center;
+    max-width: 100%;
+  }
+  .gameSection__content nav h3 {
+    font-size: 22px;
+  }
+  .gameSection__content nav p {
+    font-size: 20px;
+    width: 100%;
+  }
+  .gameSection__content img {
+    max-width: 100%;
+    margin-top: 25px;
+  }
+}
 
 .faq {
   width: 100%;
@@ -124,6 +148,19 @@
   padding-bottom: 10px;
   transition: height, 0.5s ease;
 }
+@media (max-width: 640px) {
+  .faq {
+    width: 100%;
+    position: absolute;
+    top: 130vh;
+  }
+  .faq h3 {
+    font-size: 20px;
+  }
+  .faq p {
+    font-size: 16px;
+  }
+}
 
 * {
   padding: 0;
@@ -146,10 +183,50 @@ body::before {
   top: 90vh;
   left: 5vw;
   width: 90%;
-  height: 255%;
+  height: 230%;
   background-color: #000;
   content: "";
   opacity: 0.7;
+}
+@media (max-width: 640px) {
+  body {
+    background-size: 200vw 100%;
+    background-position: left;
+  }
+  body::before {
+    position: absolute;
+    top: 90vh;
+    left: 5vw;
+    width: 90%;
+    height: 180%;
+    background-color: #000;
+    content: "";
+    opacity: 0.7;
+  }
+}
+@media (max-width: 768px) and (min-width: 641px) {
+  body::before {
+    position: absolute;
+    top: 90vh;
+    left: 5vw;
+    width: 90%;
+    height: 145%;
+    background-color: #000;
+    content: "";
+    opacity: 0.7;
+  }
+}
+@media (max-width: 1024px) and (min-width: 769px) {
+  body::before {
+    position: absolute;
+    top: 90vh;
+    left: 5vw;
+    width: 90%;
+    height: 190%;
+    background-color: #000;
+    content: "";
+    opacity: 0.7;
+  }
 }
 
 .secoes {
@@ -171,6 +248,11 @@ body::before {
   margin: 1em 0 0.5em;
   text-align: center;
   text-shadow: 0.01vw 0.01vw #fff;
+}
+@media (max-width: 640px) {
+  .title {
+    font-size: 30px;
+  }
 }
 
 h3 {

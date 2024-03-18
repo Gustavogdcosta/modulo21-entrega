@@ -28,10 +28,54 @@ body
         top: 90vh;
         left: 5vw;
         width: 90%;
-        height: 255%;
+        height: 230%;
         background-color: #000;
         content: '';
         opacity: 0.7;
+    }
+
+    @media (max-width: 640px){
+
+    background-size: 200vw 100%;
+    background-position: left;
+
+    &::before { //como escurecer um background image
+        position: absolute;
+        top: 90vh;
+        left: 5vw;
+        width: 90%;
+        height: 180%;
+        background-color: #000;
+        content: '';
+        opacity: 0.7;
+    }
+
+    
+    }
+    @media (max-width: 768px) and (min-width:641px) {
+        &::before { //como escurecer um background image
+            position: absolute;
+            top: 90vh;
+            left: 5vw;
+            width: 90%;
+            height: 145%;
+            background-color: #000;
+            content: '';
+            opacity: 0.7;
+        }
+    }
+
+    @media (max-width: 1024px) and (min-width:769px){
+        &::before { //como escurecer um background image
+            position: absolute;
+            top: 90vh;
+            left: 5vw;
+            width: 90%;
+            height: 190%;
+            background-color: #000;
+            content: '';
+            opacity: 0.7;
+        }
     }
 }
 
@@ -60,6 +104,10 @@ body
     margin: 1em 0 0.5em;
     text-align: center;
     text-shadow: 0.01vw 0.01vw #fff;
+
+    @media (max-width:640px){
+        font-size: 30px;
+    }
 }
 
 h3{
@@ -76,4 +124,5 @@ p{
     font-family: Papyrus, fantasy;
     text-align: center;
     text-align: justify;
+    
 }
